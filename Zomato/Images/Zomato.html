@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background-image: url(./cover.avif);
+            background-repeat: no-repeat;
+            background-size: 1550px 500px;
+        }
+        #top{
+            color: white;
+            margin-top: 20px;
+        }
+        .rtop{
+            display:inline-block;
+            font-size:20px ;
+            font-family: "Quicksand", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+        #tgap{
+            margin-left: 650px;
+        }
+        #igap{
+            margin-left: 20px;
+        }
+        #tleft{
+            display: inline-block;
+            font-size: 15px;
+            margin-left: 190px;
+        }
+        /*div{
+            border: 2px red solid;
+        }*/
+        #banner{
+            color: white;
+            text-align: center;
+        }
+        #belbannertxt{
+            color: white;
+            padding-left: 400px;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+        }
+        #zomato{
+            margin-top: 70px;
+            font-size: 45px;
+            font-family: "Acme", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: 2px;
+        }
+        .srch{
+            width: 800px;
+            margin-left: 340px;
+            height: 50px;
+            border-radius: 10px;
+            border: none;
+        }
+        #srch{
+            margin-top: 15px;
+        }
+        #c1{
+            display: inline-block;
+            margin-top: 200px;
+            margin-left: 200px;
+            width: 350px;
+            height: 230px;
+            border-top-left-radius: 23px;
+            border-top-right-radius: 23px;
+            border: 1px black solid;
+        }
+        #c1u{
+            background-image: url(../Images/c1.avif);
+            background-size: 350px 200px;
+            background-repeat: no-repeat;
+            height: 140px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        #c1b{
+            height: 70px;
+            padding-top: 15px;
+        }
+        #c1img{
+            width: 300px;
+        }
+        .c1txt{
+            padding-left: 10px;
+        }
+        #c2{
+            display: inline-block;
+            width: 350px;
+            height: 230px;
+            border-top-left-radius: 23px;
+            border-top-right-radius: 23px;
+            margin-left: 20px;
+            border: 1px black solid;
+        }
+        #c2u{
+            background-image: url(../Images/c2.avif);
+            background-size: 350px 200px;
+            background-repeat: no-repeat;
+            height: 140px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        #c2b{
+            height: 70px;
+            padding-top: 15px;
+        }
+        #c2img{
+            width: 300px;
+        }
+        .c2txt{
+            padding-left: 10px;
+        }
+        #c3{
+            display: inline-block;
+            width: 350px;
+            height: 230px;
+            border-top-left-radius: 23px;
+            border-top-right-radius: 23px;
+            margin-left: 20px;
+            border: 1px black solid;
+        }
+        #c3u{
+            background-image: url(../Images/c3.avif);
+            background-size: 350px 200px;
+            background-repeat: no-repeat;
+            height: 140px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        #c3b{
+            height: 70px;
+            padding-top: 15px;
+        }
+        #c3img{
+            width: 300px;
+        }
+        .c3txt{
+            padding-left: 10px;
+        }
+        #ban2{
+            margin-top: 30px;
+            margin-left: 200px;
+        }
+        #ban2lft{
+            display: inline-block;
+        }
+        #ban2right{
+            display: inline-block;
+            margin-left: 350px;
+        }
+        #ccard{
+            margin-left: 200px;
+            margin-top: 10px;
+        }
+        #cc1{
+            background-image: url(../Images/cc1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: inline-block;
+            height: 350px;
+            width: 250px;
+            margin-right: 25px;
+            border-radius: 10px;
+        }
+        #cc2{
+            background-image: url(./cc2.jpg);
+            background-size: 450px 350px;
+            background-repeat: no-repeat;
+            display: inline-block;
+            height: 350px;
+            width: 250px;
+            margin-right: 25px;
+            border-radius: 10px;
+        }
+        #cc3{
+            background-image: url(./cc3.avif);
+            background-size: 450px 350px;
+            display: inline-block;
+            height: 350px;
+            width: 250px;
+            margin-right: 25px;
+            border-radius: 10px;
+        }
+        #cc4{
+            background-image: url(./cc4.avif);
+            background-size: 400px 300px;
+            border-radius: 10px;
+
+            display: inline-block;
+            height: 350px;
+            width: 250px;
+        }
+        #cc1txt{
+            position: absolute;
+            top: 1200px;
+        }
+        #plinch{
+            margin-left: 200px;
+            margin-top: 30px;
+        }
+        #grid{
+            margin-left: 200px;
+            margin-top: 30px;
+        }
+        .places{
+            display: inline-block;
+            padding-right: 200px;
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: 2px black solid;
+            border-radius: 10px;
+            margin-left: 40px;
+            margin-top: 10px;
+        }
+
+        #Nunga{
+            margin-left: 40px;
+        }
+
+        #sm{
+            margin-left: 100px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-top: 10px;
+        }
+
+        #footer div{
+            border: 2px red solid;
+        }
+
+        #picture{
+            display: inline-flex;
+        }
+
+        #getapp{
+            display: inline-flex;
+        }
+    </style>
+</head>
+<body>
+    <div id="top">
+        <div id="tleft"> Get the app</div>
+        <div class="rtop" id="tgap">Invertor Relationship</div>
+        <div class="rtop" id="igap">Add Restaurant</div>
+        <div class="rtop" id="igap">Login</div>
+        <div class="rtop" id="igap">Signup</div>
+    </div>
+    <div id="zomato">
+        <h1 id="banner"><i>zomato</i></h1>
+    </div>
+    <div id="belbanner">
+        <h1 id="belbannertxt">Discover the best food & drinks in Chennai</h1>
+    </div>
+    <div id="srch">
+        <input type="text" name="" id="" class="srch">
+    </div>
+    <div id="c1">
+        <div id="c1u">
+        </div>
+        <div id="c1b">
+            <h1 class="c1txt">Order Online</h1>
+            <p class="c1txt">Stay home and Order to ypur Doorstep.</p>
+        </div>   
+    </div>
+    <div id="c2">
+        <div id="c2u">
+        </div>
+        <div id="c2b">
+            <h1 class="c2txt">Order Online</h1>
+            <p class="c2txt">Stay home and Order to ypur Doorstep.</p>
+        </div>  
+    </div>
+    <div id="c3">
+        <div id="c3u">
+        </div>
+        <div id="c3b">
+            <h1 class="c3txt">Order Online</h1>
+            <p class="c3txt">Stay home and Order to ypur Doorstep.</p>
+        </div>   
+    </div>
+    <div id="ban2">
+        <div id="ban2lft">
+           <h1>Collections</h1>
+           <p>Explore curated lists of top restaurants, cafes, pubs, and bars in Chennai, based on trnds</p>
+        </div>
+        <div id="ban2right">
+            <p>All collections in Chennai</p>
+        </div>
+    </div> 
+    <div id="ccard">
+        <div id="cc1">
+            <div id="cc1txt">
+                <h1 style="font-size: 20px; color: white;">Newly Opened Places</h1>
+            </div>
+        </div>
+        <div id="cc2">
+            <div id="cc1txt">
+                <h1 style="font-size: 20px; color: white;">Best live Screenings</h1>
+            </div>
+        </div>
+        <div id="cc3">
+            <div id="cc1txt">
+                <h1 style="font-size: 20px; color: white;">Sea View Dinning</h1>
+            </div>
+        </div>
+        <div id="cc4">
+            <div id="cc1txt">
+                <h1 style="font-size: 20px; color: white;">Best Insta-worthy Places</h1>
+            </div>
+        </div>
+    </div> 
+    <div id="plinch">
+        <h1>Popular localities in and around Chennai</h1>
+    </div>  
+    <div id="grid" >
+        <div id="Tnagar" class="places">
+            <h3>T. Nagar</h3>
+            <p>364 places</p>
+        </div>
+        <div id="Nunga" class="places">
+            <h3>Nungambakkam</h3>
+            <p>311 places</p>
+        </div>
+        <div id="Vela" class="places">
+            <h3>Velachery</h3>
+            <p>482 places</p>
+        </div><br>
+        <div id="Adyar" class="places">
+            <h3>Adyar</h3>
+            <p>245 places</p>
+        </div>
+        <div id="ANE" class="places">
+            <h3>Anna Nagar East</h3>
+            <p>737 places</p>
+        </div>
+        <div id="Thurai" class="places">
+            <h3>Thuraipakkam</h3>
+            <p>144 places</p>
+        </div><br>
+        <div id="Myla" class="places">
+            <h3>Mylapore</h3>
+            <p>254 places</p>
+        </div>
+        <div id="Alwa" class="places">
+            <h3>Alwarpet</h3>
+            <p>255 places</p>
+        </div>
+        <div id="sm" class="places">
+            <h3>See more</h3>
+        </div>
+    </div>
+
+    <section id="footer">
+        <div id="picture">
+            <img src="./Screenshot 2024-08-30 233105.png" alt="">
+        </div>
+        <div id="getapp">
+            <h3>We will send you a link, open it on your phone to download the app</h3>
+            <br>
+            <br>
+            <input type="radio" name="Email" id="">Email
+            <input type="radio" name="" id="">Phone No.
+            <br>
+            <br>
+            <input type="text"><button type="submit">Share App Link</button>
+
+        </div>
+    </section>
+</body>
+</html>
